@@ -581,6 +581,22 @@ test = ["pytest", "pytest-check-links", "requests", "wheel", "virtualenv"]
 
 [[package]]
 category = "main"
+description = "A server extension for JupyterLab's git extension"
+name = "jupyterlab-git"
+optional = false
+python-versions = ">=3.6,<4"
+version = "0.22.1"
+
+[package.dependencies]
+notebook = "*"
+packaging = "*"
+pexpect = "*"
+
+[package.extras]
+test = ["requests-unixsocket", "pytest", "pytest-asyncio", "black", "pre-commit"]
+
+[[package]]
+category = "main"
 description = "Pygments theme using JupyterLab CSS variables"
 name = "jupyterlab-pygments"
 optional = false
@@ -1700,7 +1716,7 @@ plotting = ["graphviz", "matplotlib"]
 scikit-learn = ["scikit-learn"]
 
 [metadata]
-content-hash = "0cc57bdcbcb558eb726d1e7f822efdfc55a1dc2409474136be48cdcf6abe0fe6"
+content-hash = "7cc14ef8e666b20394abb5b557a8f48f2dd5189d5f7cc05e3c8b659f126746fd"
 lock-version = "1.1"
 python-versions = "^3.8"
 
@@ -2016,6 +2032,10 @@ jupyter-core = [
 jupyterlab = [
     {file = "jupyterlab-2.2.8-py3-none-any.whl", hash = "sha256:95d0509557881cfa8a5fcdf225f2fca46faf1bc52fc56a28e0b72fcc594c90ab"},
     {file = "jupyterlab-2.2.8.tar.gz", hash = "sha256:c8377bee30504919c1e79949f9fe35443ab7f5c4be622c95307e8108410c8b8c"},
+]
+jupyterlab-git = [
+    {file = "jupyterlab_git-0.22.1-py3-none-any.whl", hash = "sha256:15f992118ad6f8a5804db9ae427882a14cd183ffb056be83a9bafb68f7b201c8"},
+    {file = "jupyterlab_git-0.22.1.tar.gz", hash = "sha256:e0fe2503d08dc00cda781b1ff89eb10c0decb45b5f8983b4970525b8f108dc02"},
 ]
 jupyterlab-pygments = [
     {file = "jupyterlab_pygments-0.1.1-py2.py3-none-any.whl", hash = "sha256:c9535e5999f29bff90bd0fa423717dcaf247b71fad505d66b17d3217e9021fc5"},
